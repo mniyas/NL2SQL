@@ -1,0 +1,10 @@
+# Predicting the condition number
+A = Softmax(Linear(Ecol))
+B = Ecol
+conditionH1 = Linear(A * B)
+conditionH2 = Linear(A * B)
+------
+1. Linear(Eq) to single feature
+2. Softmax(1)
+3. Eq * 2(expaneded like Eq)
+4. Linear -> Tanh -> Linear(5 classes)
